@@ -239,29 +239,56 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-  body {
+  .container {
+    width: 80%;
+  }
+  
+  .main-section {
+    max-width: 60%;
+  }
+  .sidebar {
+    max-width: 33%;
+  }
 
+  .auth-image {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
 
+  #logo {
+    margin-left: 30px;
+  }
+
+  .auth-image {
+    height: 180px;
+    width: 250px;
+  }
+
+.sidebar {
+    float: left;
+    width: 100%;
+    max-width: none;
+  }
+
+  .main-section {
+    max-width: none;
+  }
+
+  .work {
+    width: none;
   }
 }
 
+  
 @media screen and (max-width: 640px) {
   #logo {
     width: 100%;
   }
 
-  nav,
-  #  {
-    width: 100%;
-  }
-
   nav {
-    text-align: center;
+   text-align: center;
     width: 100%;
   }
 
@@ -289,6 +316,7 @@ input[type=submit] {
   .sidebar {
     float: left;
     width: 100%;
+    max-width: none;
   }
 
   #connect {
